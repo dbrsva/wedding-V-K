@@ -42,10 +42,10 @@ section{padding:clamp(4.5rem,11vw,7.5rem) 0;position:relative}
    Фото автоматически делается чёрно-белым и слегка затемняется, чтобы текст читался.
    Чтобы оставить цвет, удалите  filter:grayscale(1)  в правиле  .dark::before.
    Чтобы сместить кадрирование, добавьте например  --pos:center top;  */
-#intro,#top{ --photo:none; }   /* ФОТО 1: первый экран и заставка (сюда: --photo:url('hero.jpg');) */
-#where{ --photo:none; }        /* ФОТО 2: блок «Локация»           (сюда: --photo:url('place.jpg');) */
-#gifts{ --photo:none; }        /* ФОТО 3: блок «Пожелания»         (сюда: --photo:url('gifts.jpg');) */
-#finale{ --photo:none; }       /* ФОТО 4: финальный экран          (сюда: --photo:url('finale.jpg');) */
+#intro,#top{ --photo:url('1.jpg'); }   /* ФОТО 1: первый экран и заставка (сюда: --photo:url('hero.jpg');) */
+#where{ --photo:url('2.jpg'); }        /* ФОТО 2: блок «Локация»           (сюда: --photo:url('place.jpg');) */
+#gifts{ --photo:url('3.jpg'); }        /* ФОТО 3: блок «Пожелания»         (сюда: --photo:url('gifts.jpg');) */
+#finale{ --photo:url('4.jpg'); }       /* ФОТО 4: финальный экран          (сюда: --photo:url('finale.jpg');) */
 
 /* Тёмные блоки с рваным краем бумаги */
 .dark{position:relative;isolation:isolate;color:var(--paper);background:var(--night);--th:clamp(34px,8vw,64px)}
